@@ -19,7 +19,7 @@ public class Main {
         student.setName(fullName);
         student.setAddress("Moratuwa");
 
-        session.save(student);
+        session.delete(student);
         transaction.commit();
         session.close();
 
